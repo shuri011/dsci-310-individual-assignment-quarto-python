@@ -23,7 +23,7 @@ reports/qmd_example.pdf: results reports/qmd_example.qmd
 	quarto render reports/qmd_example.qmd --to pdf
 
 # render quarto report in docs
-docs/qmd_example.html: results report/qmd_example.qmd
+docs/qmd_example.html: results reports/qmd_example.qmd
 	quarto render reports/qmd_example.qmd --to html --output-dir ../docs
 
 # clean
@@ -32,4 +32,4 @@ clean:
 	rm -rf reports/qmd_example.html \
 		reports/qmd_example.pdf \
 		reports/qmd_example_files
-		docs/qmd_example.html
+		docs/qmd_example.htmlmake
